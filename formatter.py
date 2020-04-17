@@ -1,7 +1,9 @@
 import os
+import sys
 
 def main():
-    ROOT_PATH = "file_path"
+    # Use like [python formatter.py "file_path"]
+    ROOT_PATH = str(sys.argv[1])
     file_check(ROOT_PATH)
 
 def check(file_path, filename):
